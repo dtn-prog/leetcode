@@ -1,6 +1,6 @@
 <?php
 class Solution {
-  function longestConsecutive($nums) {
+  function longestConsecutive($nums): int {
     // creae a set
     $numsSet = [];
     for ($i=0; $i < count($nums); $i++) {
