@@ -19,3 +19,12 @@ class Solution:
         
 so = Solution()
 ic(so.isPalindrome('tab a cat'))
+
+def is_alphanumeric(char: str):
+    if char >= ord('a') and ord(char) <= ord('z'):
+        return True
+    if char >= ord('A') and ord(char) <= ord('Z'):
+        return True
+    if char >= ord('1') and ord(char) <= ord('9'):
+        return True
+    return False
