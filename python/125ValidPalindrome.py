@@ -6,11 +6,8 @@ class Solution:
         while i < j:
             while not s[i].isalnum() and i < j:
                 i+=1
-                continue
             while not s[j].isalnum() and i < j:
                 j-=1
-                continue
-            
             if s[i].lower() != s[j].lower():
                 return False
             i+=1
