@@ -4,10 +4,10 @@ class Solution:
         i = 0
         j = len(s) - 1
         while i < j:
-            if not s[i].isalnum():
+            while not s[i].isalnum() and i < j:
                 i+=1
                 continue
-            if not s[j].isalnum():
+            while not s[j].isalnum() and i < j:
                 j-=1
                 continue
             
