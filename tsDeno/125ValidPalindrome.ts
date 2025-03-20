@@ -23,3 +23,5 @@ function isPalindrome(s: string): boolean {
 	}
 	return true
 }
+
+console.log(isPalindrome('was it a cat that i saw?'))
