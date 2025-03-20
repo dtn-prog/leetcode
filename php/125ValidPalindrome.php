@@ -8,8 +8,14 @@ function isAlphanumeric(string $char):bool {
   );
 }
 
-function isPalindrome(string $char):bool {
-  // $i = 0;
-  // $j =  
+function isPalindrome(string $str):bool {
+  for($i = 0,$j = strlen($str)-1; $i < $j; $i++,$j--) {
+    while(!isAlphanumeric($str[$i]) && $i < $j)
+      $i++;
+    while(!isAlphanumeric($str[$j]) && $i < $j)
+      $j--;
+    if(strtolower($str[$i]) !== strtolower($str[$j]))
+      return false;
+  }   
   return true;
 }
